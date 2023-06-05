@@ -1,0 +1,107 @@
+    <div class="grid">
+        <div class="col-12 lg:col-6 xl:col-3">
+            <div class="card mb-0">
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span class="block text-500 font-medium mb-3"> 2023 consumption</span>
+                        <div class="text-900 font-medium text-xl">152 Kwh</div>
+                    </div>
+                    <div class="flex align-items-center justify-content-center bg-blue-100 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                        <i class="pi pi-home text-blue-500 text-xl"></i>
+                    </div>
+                </div>
+                <span class="text-green-500 font-medium">4 Kwh more </span>
+                <span class="text-500">than last visit</span>
+            </div>
+        </div>
+        <div class="col-12 lg:col-6 xl:col-3">
+            <div class="card mb-0">
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span class="block text-500 font-medium mb-3">Saved</span>
+                        <div class="text-900 font-medium text-xl">21€</div>
+                    </div>
+                    <div class="flex align-items-center justify-content-center bg-orange-100 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                        <i class="pi pi-money-bill text-orange-500 text-xl"></i>
+                    </div>
+                </div>
+                <span class="text-green-500 font-medium">%52+ </span>
+                <span class="text-500">since last week</span>
+            </div>
+        </div>
+        <div class="col-12 lg:col-6 xl:col-3">
+            <div class="card mb-0">
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span class="block text-500 font-medium mb-3">Community</span>
+                        <div class="text-900 font-medium text-xl">8441</div>
+                    </div>
+                    <div class="flex align-items-center justify-content-center bg-cyan-100 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                        <i class="pi pi-users text-cyan-500 text-xl"></i>
+                    </div>
+                </div>
+                <span class="text-green-500 font-medium">520  </span>
+                <span class="text-500">newly registered</span>
+            </div>
+        </div>
+        <div class="col-12 lg:col-6 xl:col-3">
+            <div class="card mb-0">
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span class="block text-500 font-medium mb-3">Comments</span>
+                        <div class="text-900 font-medium text-xl">2 Unread</div>
+                    </div>
+                    <div class="flex align-items-center justify-content-center bg-purple-100 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                        <i class="pi pi-comment text-purple-500 text-xl"></i>
+                    </div>
+                </div>
+                <span class="text-green-500 font-medium">8 </span>
+                <span class="text-500">responded</span>
+            </div>
+        </div>
+
+        <div class="col-12 xl:col-6">
+            <div class="card">
+                <h5>Proposed Plans</h5>
+                <p-table [value]="products" [paginator]="true" [rows]="3" responsiveLayout="scroll">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th pSortableColumn="name">Plan <p-sortIcon field="name"></p-sortIcon></th>
+                            <th pSortableColumn="price">Reduction in Kw ( Yearly) <p-sortIcon field="price"></p-sortIcon></th>
+                            <th>Description</th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-product>
+                        <tr>
+                            <td style="width: 25%; min-width: 7rem;">{{product.name}}</td>
+                            <td style="width: 15%; min-width: 8rem;">{{product.price}} Kwh</td>
+                            <td style="width: 50%;">
+                                {{product.description}}
+                            </td>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </div>
+        </div>
+
+        <div class="col-12 xl:col-6">
+            <div class="card">
+                <h5>CO2 Emission Graph</h5>
+                <p-chart type="line" [data]="chartData" [options]="chartOptions" (click)="hange()"></p-chart>
+            </div>
+
+
+            <div class="px-4 py-5 shadow-2 flex flex-column md:flex-row md:align-items-center justify-content-between mb-3" [ngStyle]="{borderRadius: '1rem', background: 'linear-gradient(0deg, rgba(0, 123, 255, 0.5), rgba(0, 123, 255, 0.5)), linear-gradient(92.54deg, #1C80CF 47.88%, #FFFFFF 100.01%)'}">
+           <div>
+               <div class="text-blue-100 font-medium text-xl mt-2 mb-3">TAKE THE NEXT STEP</div>
+               <div class="text-white font-medium text-5xl">Contact an advisor</div>
+           </div>
+           <div class="mt-4 mr-auto md:mt-0 md:mr-0">
+               <a target="_blank" href="https://www.linkedin.com/" class="p-button font-bold px-5 py-3 p-button-warning p-button-rounded p-button-raised">
+                   Get Started
+               </a>
+           </div>
+        </div>
+    </div>
+</div>
+

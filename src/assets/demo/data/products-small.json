@@ -1,0 +1,76 @@
+{
+	"data": [
+		{
+			"id": "1000",
+			"code": "f230fh0g3",
+			"name": "Buy Thermostat",
+			"description": "Self carbon footprint reduction can be achieved by purchasing an energy-efficient thermostat, such as a smart thermostat, which allows for programmable schedules, occupancy sensors, and remote control capabilities, enabling optimized energy usage and reducing greenhouse gas emissions.",
+			"image": "amyelsner.png",
+			"price": 280,
+			"category": "Accessories",
+			"quantity": 24,
+			"inventoryStatus": "INSTOCK",
+			"rating": 5
+		},
+		{
+			"id": "1001",
+			"code": "nvklal433",
+			"name": "LED lights",
+			"description": "Self carbon footprint reduction can be achieved by replacing traditional incandescent or fluorescent bulbs with energy-efficient LED lights, resulting in significant energy savings and reduced greenhouse gas emissions while providing ample illumination and longer lifespan.",
+			"image": "annafali.png",
+			"price": 100,
+			"category": "Accessories",
+			"quantity": 61,
+			"inventoryStatus": "INSTOCK",
+			"rating": 4
+		},
+		{
+			"id": "1002",
+			"code": "zz21cz3c1",
+			"name": "Replace old gadgets with 5-star gadget ",
+			"description": "Self carbon footprint reduction can be achieved by replacing old gadgets with 5-star energy-efficient models, reducing energy consumption and greenhouse gas emissions while enjoying improved features and performance.",
+			"image": "bernardodominic.png",
+			"price": 300,
+			"category": "Fitness",
+			"quantity": 2,
+			"inventoryStatus": "LOWSTOCK",
+			"rating": 3
+		},
+		{
+			"id": "1003",
+			"code": "244wgerg2",
+			"name": "Reduce Thermostat by 2 deg",
+			"description": "Self carbon footprint reduction can be achieved by adjusting your thermostat to lower the temperature by 2 degrees, conserving energy and reducing greenhouse gas emissions while maintaining comfort levels within your living or working space.",
+			"image": "elwinsharvill.png",
+			"price": 260,
+			"category": "Clothing",
+			"quantity": 25,
+			"inventoryStatus": "INSTOCK",
+			"rating": 5
+		},
+		{
+			"id": "1003",
+			"code": "244wgerg2",
+			"name": "Solar",
+			"description": "Self carbon footprint reduction can be achieved by installing solar panels, harnessing renewable energy from the sun to power your home or workplace, reducing reliance on fossil fuels and minimizing greenhouse gas emissions.",
+			"image": "elwinsharvill.png",
+			"price": 500,
+			"category": "Clothing",
+			"quantity": 25,
+			"inventoryStatus": "INSTOCK",
+			"rating": 5
+		},
+		{
+			"id": "1003",
+			"code": "244wgerg2",
+			"name": "Turn off devices on standby",
+			"description": "Product Description",
+			"image": "elwinsharvill.png",
+			"price": 150,
+			"category": "Clothing",
+			"quantity": 25,
+			"inventoryStatus": "INSTOCK",
+			"rating": 5
+		}
+	]
+}
